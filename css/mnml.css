@@ -49,14 +49,21 @@
   content: ' ';
   display: table;
 }
-.float-left {
+.left-align {
   float: left;
 }
-.float-right {
+.right-align {
   float: right;
 }
-.center {
+.center-align {
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 /* resets */
 *,
@@ -71,6 +78,7 @@
 }
 /* global */
 .wrapper {
+  display: flex;
   margin: 0 auto;
   padding: 20px;
   max-width: 95%;
@@ -102,11 +110,11 @@
 @media all and (min-width: 600px) {
   .column.quarter,
   .spacer.quarter {
-    width: 25%;
+    flex: 0 0 25%;
   }
   .column.one-third,
   .spacer.one-third {
-    width: 33.33%;
+    flex: 0 0 33.33%;
   }
   .column.half,
   .spacer.half {
@@ -132,7 +140,7 @@ body {
   color: #eeeeee;
   background: #000000;
   font-family: 'Roboto';
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: .01em;
   line-height: 1.6;
@@ -154,6 +162,10 @@ p {
 li {
   margin-bottom: 1.0rem;
 }
+ul,
+ol {
+  padding-left: 0;
+}
 ol ol,
 ol ul,
 ul ol,
@@ -163,6 +175,7 @@ ul ul {
 }
 ol {
   list-style: decimal inside;
+  list-style-type: upper-roman;
 }
 ul {
   list-style: circle inside;

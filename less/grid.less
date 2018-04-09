@@ -15,6 +15,7 @@
 /* global */
 
 .wrapper {
+    display: flex;
     margin: 0 auto;
     padding: 20px;
     max-width: 95%;
@@ -49,10 +50,10 @@
     width: 100%;
     @media all and ( min-width: 600px) {
         &.quarter {
-            width: 25%;
+            flex: 0 0 25%;
         }
         &.one-third {
-            width: 33.33%;
+            flex: 0 0 33.33%;;
         }
         &.half {
             width: 50%;
