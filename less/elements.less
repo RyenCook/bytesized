@@ -3,13 +3,14 @@ html {
 }
 
 body {
+    padding-top: 5.8rem;
     color: @foreground;
     background: @background;
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: .01em;
-    line-height: 1.6;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    letter-spacing: @font-tracking;
+    line-height: @line-height;
 }
 
 .bold () {
@@ -17,11 +18,11 @@ body {
 }
 
 a {
-    color: @accent-color;
+    color: @white;
     text-decoration: none;
-    &:hover {
-        .bold;
-    }
+    padding: 0 .8rem;
+    .bold;
+    .slide-up(@blue, 10%);
 }
 
 b,

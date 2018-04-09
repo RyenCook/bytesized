@@ -12,14 +12,14 @@
     clear: both;
 }
 
-/* global */
+/* actual grid */
 
 .wrapper {
     display: flex;
     margin: 0 auto;
-    padding: 20px;
-    max-width: 95%;
-    background-color: #fff;
+    padding: @wrapper-padding;
+    max-width: @wrapper-width;
+    background-color: @clear;
 }
 
 .container {
@@ -30,13 +30,28 @@
     width: 100%;
 }
 
-/* grid */
+.wrapper>.container {
+    padding-bottom: 7.5rem;
+}
+
+.navigation {
+    background: @clear;
+    display: block;
+    height: 5.2rem;
+    left: 0;
+    max-width: 100%;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
 
 .row {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 -10px;
-    margin-bottom: 10px;
+    margin: @row-margin;
+    margin-bottom: 1.0rem;
 }
 
 .row:last-child {
@@ -46,7 +61,8 @@
 .column,
 .spacer {
     overflow-wrap: break-word;
-    padding: 10px;
+    padding: @column-padding;
+    margin-bottom: 0;
     width: 100%;
     @media all and ( min-width: 600px) {
         &.quarter {

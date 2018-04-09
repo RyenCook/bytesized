@@ -1,47 +1,50 @@
 /* COLORS */
-/* COLORS */
+/* MIXINS */
+/* HELPERS */
+/* GRID */
+/* ELEMENTS */
 .black {
-  color: #eeeeee;
   background: #000000;
+  color: #ffffff;
 }
 .white {
+  background: #ffffff;
   color: #000000;
-  background: #eeeeee;
 }
 .grey {
-  color: #eeeeee;
+  color: #ffffff;
   background: #989f8f;
 }
 .red {
-  color: #eeeeee;
+  color: #ffffff;
   background: #d43e36;
 }
 .orange {
-  color: #eeeeee;
+  color: #ffffff;
   background: #f99927;
 }
 .yellow {
-  color: #eeeeee;
-  background: #efc200;
+  color: #ffffff;
+  background: #ffc60a;
 }
 .green {
-  color: #eeeeee;
+  color: #ffffff;
   background: #839b00;
 }
 .blue {
-  color: #eeeeee;
+  color: #ffffff;
   background: #5286bc;
 }
 .cyan {
-  color: #eeeeee;
+  color: #ffffff;
   background: #4ba8af;
 }
 .purple {
-  color: #eeeeee;
+  color: #ffffff;
   background: #9c71b7;
 }
 .pink {
-  color: #eeeeee;
+  color: #ffffff;
   background: #e283ad;
 }
 .clearfix:after {
@@ -76,13 +79,13 @@
   display: table;
   clear: both;
 }
-/* global */
+/* actual grid */
 .wrapper {
   display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 2rem;
   max-width: 95%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0);
 }
 .container {
   margin: 0 auto;
@@ -91,12 +94,25 @@
   position: relative;
   width: 100%;
 }
-/* grid */
+.wrapper > .container {
+  padding-bottom: 7.5rem;
+}
+.navigation {
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  height: 5.2rem;
+  left: 0;
+  max-width: 100%;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
 .row {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -10px;
-  margin-bottom: 10px;
+  margin: 0 -1rem;
+  margin-bottom: 1.0rem;
 }
 .row:last-child {
   margin-bottom: 0;
@@ -104,7 +120,8 @@
 .column,
 .spacer {
   overflow-wrap: break-word;
-  padding: 10px;
+  padding: 1rem;
+  margin-bottom: 0;
   width: 100%;
 }
 @media all and (min-width: 600px) {
@@ -137,20 +154,27 @@ html {
   box-sizing: border-box;
 }
 body {
-  color: #eeeeee;
+  padding-top: 5.8rem;
+  color: #ffffff;
   background: #000000;
   font-family: 'Roboto';
   font-size: 1.6rem;
   font-weight: 300;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   line-height: 1.6;
 }
 a {
-  color: #4ba8af;
+  color: #ffffff;
   text-decoration: none;
+  padding: 0 .8rem;
+  font-weight: bold;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #000000 50%, #5286bc 50%);
+  transition: background-position 0.6667s;
+  background-position: 0 10%;
 }
 a:hover {
-  font-weight: bold;
+  background-position: 0 100%;
 }
 b,
 strong {
@@ -182,7 +206,7 @@ ul {
 }
 hr {
   border: 0;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid #ffffff;
   margin: 3.0rem 0;
 }
 h1 {

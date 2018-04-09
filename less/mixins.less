@@ -1,0 +1,62 @@
+.color(@color) {
+    color: @foreground;
+    background: @color;
+}
+
+.slide-up(@color) {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, @background 50%, @color 50%);
+    transition: background-position @transition-time;
+    &:hover {
+        background-position: 0 100%
+    }
+}
+
+.slide-up(@color, @start) {
+    .slide-up(@color);
+    background-position: 0 @start;
+}
+
+.slide-down(@color) {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, @color 50%, @background 50%);
+    transition: background-position @transition-time;
+    &:hover {
+        background-position: 0 -100%
+    }
+}
+
+.slide-down(@color, @start) {
+    .slide-down(@color);
+    @negstart: -1 * @start;
+    background-position: 0 @negstart;
+}
+
+.slide-left(@color) {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, @color 50%, @background 50%);
+    transition: background-position @transition-time;
+    &:hover {
+        background-position: 100% 0;
+    }
+}
+
+.slide-left(@color, @start) {
+    .slide-left(@color);
+    background-position: @start 0;
+}
+
+.slide-right(@color) {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, @background 50%, @color 50%);
+    transition: background-position @transition-time;
+    &:hover {
+        background-position: -100% 0;
+    }
+}
+
+.slide-right(@color, @start) {
+    .slide-right(@color);
+    @negstart: -1 * @start;
+    background-position: @negstart 0;
+}

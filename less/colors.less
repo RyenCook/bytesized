@@ -1,60 +1,69 @@
-/* COLORS */
+@black: #000000;
+@white: #ffffff;
+@grey: #989f8f;
+@red: #d43e36;
+@orange: #f99927;
+@yellow: #ffc60a;
+@green: #839b00;
+@cyan: #4ba8af;
+@blue: #5286bc;
+@purple: #9c71b7;
+@pink: #e283ad;
 
-.color() {
-    color: @foreground;
-}
+@clear: rgba(0,0,0,0);
+
+// They're here if I ever need them, probably for :hover or some shit.
+@pastel-red: #df6565;
+@pastel-orange: #ed9e56;
+@pastel-yellow: #ecce58;
+@pastel-green: #c5d15c;
+@pastel-cyan: #80cabf;
+@pastel-blue: #8cb6e1;
+@pastel-purple: #cfabdf;
+@pastel-pink: #ff94bd;
 
 .black {
-    color: @white;
     background: @black;
+    color: @white;
 }
 
 .white {
-    color: @black;
     background: @white;
+    color: @black;
 }
 
 .grey {
-    .color;
-    background: @grey;
+    .color(@grey);
 }
 
 .red {
-    .color;
-    background: @red;
+    .color(@red);
 }
 
 .orange {
-    .color;
-    background: @orange;
+    .color(@orange);
 }
 
 .yellow {
-    .color;
-    background: @yellow;
+    .color(@yellow);
 }
 
 .green {
-    .color;
-    background: @green;
+    .color(@green);
 }
 
 .blue {
-    .color;
-    background: @blue;
+    .color(@blue);
 }
 
 .cyan {
-    .color;
-    background: @cyan;
+    .color(@cyan);
 }
 
 .purple {
-    .color;
-    background: @purple;
+    .color(@purple);
 }
 
 .pink {
-    .color;
-    background: @pink;
+    .color(@pink);
 }
