@@ -15,11 +15,38 @@
 .center-align {
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 .vertical-align {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.left-justify {
+    text-align: left;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+.center-justify {
+    text-align: center;
+}
+
+.left {
+    .left-align;
+    .left-justify;
+}
+
+.right {
+    .right-align;
+    .right-justify;
+}
+
+.center {
+    .vertical-align;
+    .center-align;
+    .center-justify;
 }

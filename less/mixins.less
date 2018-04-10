@@ -1,62 +1,50 @@
 .color(@color) {
-    color: @foreground;
+    color: @white;
     background: @color;
 }
 
-.slide-up(@color) {
+.slide-up(@color, @start, @text-color) {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, @background 50%, @color 50%);
-    transition: background-position @transition-time;
+    background-position: 0 @start;
+    transition: all @transition-time;
     &:hover {
-        background-position: 0 100%
+        background-position: 0 100%;
+        color: @text-color;
     }
 }
 
-.slide-up(@color, @start) {
-    .slide-up(@color);
-    background-position: 0 @start;
-}
-
-.slide-down(@color) {
+.slide-down(@color, @start, @text-color) {
+    @pos: -1 * @start;
     background-size: 100% 200%;
     background-image: linear-gradient(to top, @color 50%, @background 50%);
-    transition: background-position @transition-time;
+    background-position: 0 @pos;
+    transition: all @transition-time;
     &:hover {
-        background-position: 0 -100%
+        background-position: 0 -100%;
+        color: @text-color;
     }
 }
 
-.slide-down(@color, @start) {
-    .slide-down(@color);
-    @negstart: -1 * @start;
-    background-position: 0 @negstart;
-}
-
-.slide-left(@color) {
+.slide-left(@color, @start, @text-color) {
     background-size: 200% 100%;
     background-image: linear-gradient(to left, @color 50%, @background 50%);
+    background-position: @start 0;
     transition: background-position @transition-time;
     &:hover {
         background-position: 100% 0;
+        color: @text-color;
     }
 }
 
-.slide-left(@color, @start) {
-    .slide-left(@color);
-    background-position: @start 0;
-}
-
-.slide-right(@color) {
+.slide-right(@color, @start, @text-color) {
+    @pos: -1 * @start;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, @background 50%, @color 50%);
-    transition: background-position @transition-time;
+    background-position: @pos 0;
+    transition: all @transition-time;
     &:hover {
         background-position: -100% 0;
+        color: @text-color;
     }
-}
-
-.slide-right(@color, @start) {
-    .slide-right(@color);
-    @negstart: -1 * @start;
-    background-position: @negstart 0;
 }
