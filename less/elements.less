@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    padding-top: 5.8rem;
+    padding-top: 5.4rem;
     color: @foreground;
     background: @background;
     font-family: @font-family;
@@ -21,8 +21,9 @@ a {
     color: @foreground;
     text-decoration: none;
     padding: 0 .8rem;
-    .bold;
-    .slide-up(@blue, 10%, @white);
+    border-radius: @border-radius;
+    font-weight: 700;
+    .slide-right(@blue, 5%, @white);
 }
 
 b,
@@ -103,4 +104,22 @@ h5 {
     font-size: 1.8rem;
     letter-spacing: -.05rem;
     line-height: 1.5;
+}
+
+.button {
+  display: inline;
+  border-radius: @border-radius;
+  color: @foreground;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  .slide-up(@primary-color, 5%, @accent-color);
 }
