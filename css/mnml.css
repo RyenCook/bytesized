@@ -235,15 +235,15 @@ a {
   text-decoration: none;
   padding: 0 .1rem;
   border-radius: 0;
-  font-weight: 700;
+  font-style: italic;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #0096d5 50%);
-  background-position: 0% 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%);
+  background-position: -2% 0;
   transition: all 0.3333s;
 }
 a:hover {
   background-position: -100% 0;
-  color: #fefefe;
+  color: #0096d5;
 }
 b,
 strong {
@@ -322,8 +322,9 @@ h5 {
 }
 .button {
   display: inline;
+  border: 0.2rem solid #f15a4f;
   border-radius: 0;
-  color: #ffc60a;
+  color: #f15a4f;
   cursor: pointer;
   display: inline-block;
   font-size: 1.6rem;
@@ -336,7 +337,7 @@ h5 {
   text-transform: uppercase;
   white-space: nowrap;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #ffc60a 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #f15a4f 50%);
   background-position: 0 5%;
   transition: all 0.3333s;
 }
