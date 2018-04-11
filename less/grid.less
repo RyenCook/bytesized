@@ -54,37 +54,26 @@
 }
 
 .navigation .container {
-    padding-bottom: 0;
-    padding-top: 0
+    max-width: 100% !important;
 }
 
 .navigation .navigation-list {
     list-style: none;
     margin-bottom: 0;
     //border-radius: @border-radius;
-    .right-align;
     //margin-right: 5rem
 }
 
 .navigation .navigation-item {
     float: left;
     margin-bottom: 0;
-    margin-left: 2.5rem;
+    font-weight: normal;
     padding: .2rem .4rem;
     position: relative;
-    border-radius: @border-radius;
-    .slide-up(@foreground, 5%, @background);
-}
-
-.navigation .navigation-title {
-    position: relative;
-    display: inline;
     font-size: 1.6rem;
-    line-height: 5.2rem;
-    padding: .2rem .4rem;
     text-decoration: none;
     border-radius: @border-radius;
-    .slide-up(@foreground, 5%, @background);
+    .slide-up(@foreground, 0%, @background);
 }
 
 .row {
@@ -128,4 +117,13 @@
 .spacer {
     color: @background;
     background: @background;
+}
+
+.footer {
+    display: block;
+}
+
+.footer .container {
+    max-width: 80.0rem;
+    font-size: 1.0rem;
 }

@@ -20,10 +20,10 @@ body {
 a {
     color: @foreground;
     text-decoration: none;
-    padding: 0 .8rem;
+    padding: 0 .1rem;
     border-radius: @border-radius;
     font-weight: 700;
-    .slide-right(@blue, 5%, @white);
+    .slide-right(@blue, 0%, @white);
 }
 
 b,
@@ -41,7 +41,7 @@ li {
 }
 
 ul, ol {
-    padding-left: 0;;
+    padding-left: 0;
 }
 
 ol ol,
@@ -109,7 +109,7 @@ h5 {
 .button {
   display: inline;
   border-radius: @border-radius;
-  color: @foreground;
+  color: @primary-color;
   cursor: pointer;
   display: inline-block;
   font-size: 1.6rem;
@@ -121,5 +121,5 @@ h5 {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  .slide-up(@primary-color, 5%, @accent-color);
+  .slide-up(@primary-color, 5%, @black);
 }
