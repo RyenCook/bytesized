@@ -112,19 +112,18 @@
   display: flex;
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 95%;
+  max-width: 100%;
   background-color: rgba(0, 0, 0, 0);
 }
 .container {
   margin: 0 auto;
-  max-width: 112.0rem;
-  padding: 0 2.0rem;
+  padding: 0;
   position: relative;
   width: 100%;
 }
 .wrapper .container {
   padding-bottom: 7.5rem;
-  max-width: 80.0rem;
+  max-width: 80rem;
 }
 .navigation {
   background: rgba(0, 0, 0, 0);
@@ -144,6 +143,7 @@
 }
 .navigation .container {
   max-width: 100% !important;
+  padding: 0 2.0rem;
 }
 .navigation .navigation-list {
   list-style: none;
@@ -159,7 +159,7 @@
   text-decoration: none;
   border-radius: 0;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #000000 50%, #fefefe 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #fefefe 50%);
   background-position: 0 0%;
   transition: all 0.3333s;
 }
@@ -237,7 +237,7 @@ a {
   border-radius: 0;
   font-weight: 700;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, #000000 50%, #0096d5 50%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #0096d5 50%);
   background-position: 0% 0;
   transition: all 0.3333s;
 }
@@ -336,7 +336,7 @@ h5 {
   text-transform: uppercase;
   white-space: nowrap;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #000000 50%, #ffc60a 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #ffc60a 50%);
   background-position: 0 5%;
   transition: all 0.3333s;
 }

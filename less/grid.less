@@ -24,15 +24,14 @@
 
 .container {
     margin: 0 auto;
-    max-width: 112.0rem;
-    padding: 0 2.0rem;
+    padding: @container-padding;
     position: relative;
     width: 100%;
 }
 
 .wrapper .container {
     padding-bottom: 7.5rem;
-    max-width: 80.0rem;
+    max-width: @container-width;
 }
 
 .navigation {
@@ -55,6 +54,7 @@
 
 .navigation .container {
     max-width: 100% !important;
+    padding: 0 2.0rem;
 }
 
 .navigation .navigation-list {
