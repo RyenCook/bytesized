@@ -1,11 +1,20 @@
 .color(@color) {
-    color: @white;
     background: @color;
+    color: @white;
 }
 
+.bold() {
+    font-weight: 400;
+}
 
+.header() {
+    font-weight: 300;
+    letter-spacing: -.1rem;
+    margin-bottom: 2.0rem;
+    margin-top: 0;
+}
 
-.slide-up(@color, @start, @text-color) {
+.slide(@color, @start, @text-color) {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, @clear 50%, @color 50%);
     background-position: 0 @start;
@@ -16,37 +25,9 @@
     }
 }
 
-.slide-down(@color, @start, @text-color) {
-    @pos: -1 * @start;
-    background-size: 100% 200%;
-    background-image: linear-gradient(to top, @color 50%, @clear 50%);
-    background-position: 0 @pos;
-    transition: all @transition-time;
-    &:hover {
-        background-position: 0 -100%;
-        color: @text-color;
+.hide-width(@width) {
+    @media all and ( max-width: @width) {
+        display: none;
     }
 }
 
-.slide-left(@color, @start, @text-color) {
-    background-size: 200% 100%;
-    background-image: linear-gradient(to left, @color 50%, @clear 50%);
-    background-position: @start 0;
-    transition: background-position @transition-time;
-    &:hover {
-        background-position: 100% 0;
-        color: @text-color;
-    }
-}
-
-.slide-right(@color, @start, @text-color) {
-    @pos: -1 * @start;
-    background-size: 200% 100%;
-    background-image: linear-gradient(to right, @clear 50%, @color 50%);
-    background-position: @pos 0;
-    transition: all @transition-time;
-    &:hover {
-        background-position: -100% 0;
-        color: @text-color;
-    }
-}

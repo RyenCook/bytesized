@@ -206,9 +206,31 @@
     width: 75%;
   }
 }
-.spacer {
+.overlay .container {
+  height: 5.2rem !important;
+  padding-bottom: 0;
+}
+.overlay .column {
+  max-width: 100%;
+  bottom: 0;
+  word-spacing: 28rem;
+}
+.overlay a {
+  font-size: 2.8rem;
   color: #fefefe;
-  background: #fefefe;
+  font-weight: bold;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #fefefe 50%);
+  background-position: 0 0%;
+  transition: all 0.3333s;
+}
+.overlay a:hover {
+  background-position: 0 100%;
+  color: #000000;
+}
+.spacer {
+  color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 .footer {
   display: block;
