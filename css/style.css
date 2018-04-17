@@ -130,7 +130,7 @@
 }
 .navbar .nav-list .nav-menu:hover svg path,
 .navbar .nav-list .nav-title:hover svg path {
-  fill: #6bcfca !important;
+  fill: #f15a4f !important;
 }
 .navbar .nav-list .nav-menu {
   float: right;
@@ -218,15 +218,15 @@
   }
   .column.half,
   .spacer.half {
-    width: 50%;
+    flex: 0 0 50%;
   }
   .column.two-thirds,
   .spacer.two-thirds {
-    width: 66.66%;
+    flex: 0 0 66.66%;
   }
   .column.three-quarters,
   .spacer.three-quarters {
-    width: 75%;
+    flex: 0 0 75%;
   }
 }
 .spacer {
@@ -250,11 +250,17 @@
 html {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 body {
   padding-top: 5.4rem;
   color: #212121;
   background: #fafafa;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -352,10 +358,10 @@ h5 {
 }
 .button {
   display: inline;
-  border: 0.2rem solid #6bcfca;
-  border-right: 0.4rem solid #6bcfca;
+  border: 0.2rem solid #f15a4f;
+  border-right: 0.4rem solid #f15a4f;
   border-radius: 0;
-  color: #6bcfca;
+  color: #f15a4f;
   cursor: pointer;
   display: inline-block;
   font-size: 1.6rem;
@@ -369,7 +375,7 @@ h5 {
   text-transform: uppercase;
   white-space: nowrap;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #6bcfca 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #f15a4f 50%);
   background-position: 0 5%;
   transition: all 0.3333s;
 }
