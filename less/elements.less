@@ -128,3 +128,34 @@ svg path {
     height: 32px;
     background-size: 32px;
 }
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
+input:not([type]),
+textarea,
+select {
+  background-color: transparent;
+  border: 0.2rem solid @background;
+  border-bottom: 0.2rem solid @foreground;
+  border-radius: @border-radius;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.8rem;
+  padding: .6rem 1.0rem;
+  font-size: @font-size;
+  width: 100%;
+  resize: none;
+  .slide(@foreground, 0%, @background);
+  .cleardefaults();
+}
