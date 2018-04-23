@@ -130,7 +130,7 @@
 }
 .navbar .nav-list .nav-menu:hover svg path,
 .navbar .nav-list .nav-title:hover svg path {
-  fill: #f15a4f !important;
+  fill: #6bcfca !important;
 }
 .navbar .nav-list .nav-menu {
   float: right;
@@ -358,10 +358,10 @@ h5 {
 }
 .button {
   display: inline;
-  border: 0.2rem solid #f15a4f;
-  border-right: 0.4rem solid #f15a4f;
+  border: 0.2rem solid #6bcfca;
+  border-right: 0.4rem solid #6bcfca;
   border-radius: 0;
-  color: #f15a4f;
+  color: #6bcfca;
   cursor: pointer;
   display: inline-block;
   font-size: 1.6rem;
@@ -375,7 +375,7 @@ h5 {
   text-transform: uppercase;
   white-space: nowrap;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #f15a4f 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #6bcfca 50%);
   background-position: 0 5%;
   transition: all 0.3333s;
 }
@@ -420,7 +420,6 @@ textarea,
 select {
   background-color: transparent;
   border: 0.2rem solid #fafafa;
-  border-bottom: 0.2rem solid #212121;
   border-radius: 0;
   box-shadow: none;
   box-sizing: inherit;
@@ -431,13 +430,13 @@ select {
   resize: none;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #212121 50%);
-  background-position: 0 0%;
+  background-position: 0 5%;
   transition: all 0.3333s;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -ms-appearance: none !important;
+  -o-appearance: none !important;
+  appearance: none !important;
 }
 input[type='email']:hover,
 input[type='number']:hover,

@@ -10,8 +10,7 @@ body {
     font-family: @font-family;
     font-size: @font-size;
     font-weight: @font-weight;
-    letter-spacing: @font-tracking;
-    //word-spacing: .5rem;
+    letter-spacing: @font-tracking; //word-spacing: .5rem;
     line-height: @line-height;
 }
 
@@ -22,11 +21,15 @@ a {
     padding: 0 .2rem;
     border-radius: @border-radius;
     font-style: italic;
-    .slide(@foreground, 0%, @background);
+    .slide(@foreground,
+    0%,
+    @background);
     .inverse &,
     .menu & {
         color: @background;
-        .slide(@background, 0%, @foreground);
+        .slide(@background,
+        0%,
+        @foreground);
     }
 }
 
@@ -104,7 +107,9 @@ h5 {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-    .slide(@primary-color, 5%, @background);
+    .slide(@primary-color,
+    5%,
+    @background);
 }
 
 svg {
@@ -116,7 +121,7 @@ svg path {
     fill: @foreground  !important;
     transition: fill @transition-time;
     .inverse & {
-        fill: @background !important;
+        fill: @background  !important;
     }
 }
 
@@ -145,17 +150,18 @@ input[type='datetime-local'],
 input:not([type]),
 textarea,
 select {
-  background-color: transparent;
-  border: 0.2rem solid @background;
-  border-bottom: 0.2rem solid @foreground;
-  border-radius: @border-radius;
-  box-shadow: none;
-  box-sizing: inherit;
-  height: 3.8rem;
-  padding: .6rem 1.0rem;
-  font-size: @font-size;
-  width: 100%;
-  resize: none;
-  .slide(@foreground, 0%, @background);
-  .cleardefaults();
+    background-color: transparent;
+    border: 0.2rem solid @background;
+    border-radius: @border-radius;
+    box-shadow: none;
+    box-sizing: inherit;
+    height: 3.8rem;
+    padding: .6rem 1.0rem;
+    font-size: @font-size;
+    width: 100%;
+    resize: none;
+    .slide(@foreground,
+    5%,
+    @background);
+    .cleardefaults;
 }
